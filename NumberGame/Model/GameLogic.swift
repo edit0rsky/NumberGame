@@ -12,11 +12,11 @@ struct GameLogic {
     // 디버깅용 고정 정답
     init(numberCount: Int = 3) {
         if numberCount == 3 {
-            self.answer = [1, 2, 3]
-            // self.answer = Array((0...9).shuffled().prefix(numberCount))
+            // self.answer = [1, 2, 3]
+            self.answer = Array((0...9).shuffled().prefix(numberCount))
         } else if numberCount == 4 {
-            self.answer = [1, 2, 3, 4]
-            // self.answer = Array((0...9).shuffled().prefix(numberCount))
+            // self.answer = [1, 2, 3, 4]
+            self.answer = Array((0...9).shuffled().prefix(numberCount))
         } else {
             self.answer = Array((0...9).shuffled().prefix(numberCount))
         }
